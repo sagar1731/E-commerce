@@ -47,7 +47,7 @@ public class AdminController {
 		return "index";
 	}
 
-	@GetMapping("login")
+	@GetMapping("/login")
 	public ModelAndView adminLogin(@RequestParam(required = false) String error) {
 		ModelAndView mv = new ModelAndView("adminlogin");
 		if ("true".equals(error)) {
